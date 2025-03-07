@@ -1,85 +1,195 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Ponomar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ponomar&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.logo-container{
-    display: flex;
-    align-items: center;
+
+.logo-container {
+  display: flex;
+  align-items: center;
 }
-.logo-container p{
-    margin-left: -10px;
-    font-size: 40px;
-    font-family: "Roboto",sans-serif;
-    font-weight: 250;
+
+.logo-container p {
+  margin-left: -10px;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 250;
 }
-.logo-img{
-    margin: 20px;
-    position: relative;
-    border-radius: 100%;
-    background-color: rgb(74, 124, 233);
-    width: 25px;
-    height: 25px;
-    padding: 10px;
-    color: white;
-    text-align: center;
+
+.logo-img {
+  margin: 20px;
+  position: relative;
+  border-radius: 100%;
+  background-color: rgb(74, 124, 233);
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
-.flipped-comma{
-    position: absolute;
-    transform:rotate(180deg);
-    font-size: 50px;
-    top: 0;
-    right: 12.5px;
+
+.flipped-comma {
+  position: absolute;
+  transform: rotate(180deg);
+  font-size: 50px;
+  top: 0;
+  right: 12.5px;
 }
 
 .ponomar-regular {
-    font-family: "Ponomar", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .navbar{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-  }
-  .navbar li {
-    list-style: none; /* Removes default list styling */
-  }
-  
-  .navbar li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    padding-bottom: 40px;
-    position: relative;
-    display: inline-block; /* Ensures underline is only under text */
-    color: darkgray; 
-  }
-  
-  .navbar li a::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(0, 110, 255);
-    position: absolute;
-    left: 0;
-    bottom: 0; 
-    transform: scaleX(0); 
-    transition: transform 0.1s ease-in-out;
-  }
-  
-  .navbar li a:hover::after,
-  .navbar li a.active::after {
-    transform: scaleX(1); 
-  }
-
-header img{
-    display: block;
-        margin-left: auto;
-        margin-right: auto;
+  font-family: "Ponomar", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-  
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.navbar li {
+  list-style: none;
+
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  display: inline-block;
+  color: darkgray;
+}
+
+.navbar li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(0, 110, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.navbar li a:hover::after,
+.navbar li a.active::after {
+  transform: scaleX(1);
+}
+
+header img {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctp-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.ctpimg-pencil {
+  display: flex;
+  color: white;
+  background-color: rgb(0, 110, 255);
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctpimg-desktop {
+  display: flex;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctpimg-basket {
+  display: flex;
+  color: white;
+  background-color: rgb(255, 221, 0);
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctp-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ctp-item h1 {
+  color: lightskyblue;
+}
+.img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+.img-container img{
+  width: 300px;
+  height: 250px;
+}
+.img-container h1{
+color: rgb(172, 170, 170);
+}
+.shopping-cart-container{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+.bullet-list h1{
+  color: rgb(172, 170, 170);
+  }
+.bullet-list ul li{
+color: lightgray;
+padding: 10px;
+}
+.bullet-list ul{
+  list-style-type: none;
+}
+main{
+  margin: 40px;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+}
+footer p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(178, 187, 197);
+}
+@media (max-width: 729px) {
+  header img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .shopping-cart-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
