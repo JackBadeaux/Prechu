@@ -173,9 +173,10 @@ padding: 10px;
   list-style-type: none;
 }
 main{
+  box-sizing: border-box;
   margin: 40px;
-  border-left: 1px black solid;
-  border-bottom: 1px black solid;
+  border-left: 1px slategray solid;
+  border-bottom: 1px slategray solid;
 }
 footer p {
   text-align: center;
@@ -191,5 +192,8 @@ footer p {
   .shopping-cart-container{
     flex-direction: column;
     justify-content: center;
+  }
+  .ctp-container{
+    padding-left: 20px;
   }
 }
