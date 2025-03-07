@@ -192,8 +192,10 @@ footer p {
   .shopping-cart-container{
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .ctp-container{
+    flex-direction: column;
     padding-left: 20px;
   }
 }
